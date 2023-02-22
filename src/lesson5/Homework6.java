@@ -37,6 +37,12 @@ public class Homework6 {
             }
         }
 
+        if (sumBuf > sum) {
+            firstEl = currentFirstEl;
+            elCount = currentElCount;
+            sum = sumBuf;
+        }
+
         System.out.println();
         System.out.println(Arrays.toString(Arrays.copyOfRange(arr, firstEl, firstEl + elCount)));
     }
