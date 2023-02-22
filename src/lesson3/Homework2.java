@@ -1,7 +1,6 @@
 package lesson3;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Homework2 {
@@ -22,7 +21,7 @@ public class Homework2 {
 
         double[] m = new double[masLength];
 
-        for (int i = 1; i < m.length; i++) {
+        for (int i = 0; i < m.length; i++) {
             m[i] = Math.random() * 100;
         }
 

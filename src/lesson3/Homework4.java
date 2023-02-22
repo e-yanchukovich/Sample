@@ -17,8 +17,9 @@ public class Homework4 {
             if (scanner.hasNextInt()) {
                 inputNumber = scanner.nextInt();
             } else {
+                scanner.next();
                 System.out.print("Неправильный ввод. Введите верное число: ");
-                break;
+                continue;
             }
 
             if (inputNumber > 5 && inputNumber <= 10) {
@@ -32,7 +33,7 @@ public class Homework4 {
         int[] m = new int[inputNumber];
         Random random = new Random();
 
-        for (int i = 1; i<m.length; i++) {
+        for (int i = 0; i<m.length; i++) {
             m[i] = random.nextInt();
         }
 
